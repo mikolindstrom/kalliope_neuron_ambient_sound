@@ -97,7 +97,7 @@ class Ambient_sound(NeuronModule):
     Play a sound from the list of sound available in the sound folder
     """
     def __init__(self, **kwargs):
-        super(Ambient_sound, self).__init__(**kwargs)
+        super().__init__(**kwargs)
 
         self.state = kwargs.get('state', None)
         self.sound_name = kwargs.get('sound_name', None)
